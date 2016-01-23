@@ -2,6 +2,6 @@
 LAB01 (Threads &amp; Runnable)
 
 ##Test
-javac LabOne.java && java LabOne [--with-runnable]
+`javac LabOne.java && java LabOne [--with-runnable]`
 
 [--with-runnable] es opcional.
