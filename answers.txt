@@ -1,0 +1,14 @@
+- ¿Que es un Thread?
+Un Thread es un espacio de ejecuación que corre en paraleo junto al hilo principal de ejecución.
+Usualmente se usa para evitar el "bloqueo" del hilo principal por tareas que pueden ser ejecutadas
+en "background".
+
+- ¿La diferencia entre implementar un "extends Thread" y un "implement Runnable"?
+La gran diferencia es que al extender una clase de Thread ya no es posible heredarla de otra.
+Esto representa una gran deficiencia en POO, pues casi siempre necesitamos heredar una clase de otra.
+Acá es dónde entra el beneficion de usar la interfaz Runnable, esto nos permite usar una clase que 
+pueda heredar de cualquier otra clase funcional, y a su vez ser cantidata para ser ejecutada como hilo.
+
+- ¿Salen entrecorridas las lineas? ¿Por que la ejecuación es igual o diferente cada vez?
+Todo depende de como el procesador reparta las tareas. Es decir puede darle X tiempo al hilo1 y 
+Y tiempo al hilo2. 
